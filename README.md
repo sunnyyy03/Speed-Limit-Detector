@@ -19,7 +19,7 @@ The program automatically locates digits within an image of a speed sign and use
   <img src="results/speed_limit_result_robust.png" alt="Output with MAX 110" width="320">
 </p>
 
-Result: **MAX 50**
+Result: **MAX 110**
 
 ## ⚙️ Requirements
 - Python 3.9+
