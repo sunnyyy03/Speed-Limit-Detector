@@ -4,7 +4,10 @@ from pathlib import Path
 # If Tesseract isn't on PATH (Windows), uncomment & set this:
 pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 
-IMG = "data/110.jpg"
+# Ask user for image name (must be in data folder)
+img_name = input("Enter the image filename (must be in 'data' folder, e.g. 110.jpg): ").strip()
+IMG = f"data/{img_name}"
+
 OUT = Path("results/speed_limit_result_robust.png")
 OUT.parent.mkdir(parents=True, exist_ok=True)
 
